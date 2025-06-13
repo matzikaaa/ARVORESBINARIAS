@@ -1,14 +1,14 @@
-public class Node<T extends Comparable<T>> {
+public class RedBlackTree<T extends Comparable<T>> {
     public static final boolean RED = true;
     public static final boolean BLACK = false;
 
     T key;              
-    boolean color;     
-    Node<T> left;       
-    Node<T> right;      
-    Node<T> parent;     
+    boolean color;      
+    RedBlackTree<T> left;      
+    RedBlackTree<T> right;      
+    RedBlackTree<T> parent;     
 
-    public Node(T key, boolean color, Node<T> parent) {
+    public RedBlackTree(T key, boolean color, RedBlackTree<T> parent) {
         this.key = key;
         this.color = color;
         this.parent = parent;
